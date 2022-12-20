@@ -5,12 +5,13 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Eat-Well</title>
-	<!-- CSS only -->
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
+
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Abyssinica+SIL&family=Barlow:wght@100&family=Bebas+Neue&family=Caveat&family=Exo+2:wght@100&family=Montserrat:wght@100;900&family=Sacramento&family=Ubuntu:ital,wght@0,400;1,300;1,500&family=Vujahday+Script&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Abyssinica+SIL&family=Barlow:wght@100&family=Bebas+Neue&family=Caveat&family=Exo+2:wght@100&family=Montserrat:wght@900&family=Sacramento&family=Ubuntu:ital,wght@0,400;1,300;1,500&family=Vujahday+Script&display=swap" rel="stylesheet">
 
 <script src="https://kit.fontawesome.com/7580a9e03f.js" crossorigin="anonymous"></script>
@@ -22,32 +23,40 @@
 	<!-- Welcome section-->
 	<section id="headtop">
 
-		<div class="container-fluid">
-
-			<nav class="navbar navbar-dark navbar-expand-lg">
+		
+		
+		<nav class="navbar navbar-dark navbar-expand-lg">
+			<div class="container-fluid">
 				<a class="navbar-brand" id="eatwell" href="#">Eat-Well</a>
-				<ul class="navbar-nav ms-auto" >
-					<li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-					<li class="nav-item"><a class="nav-link" href="#">Book a Table</a></li>
-					<li class="nav-item"><a class="nav-link" href="#">Order Online</a></li>
-					<li class="nav-item"><a class="nav-link" href="#">Amenities</a></li>
-					<li class="nav-item"><a class="nav-link" href="#">Gallery</a></li>
-					<li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
-				</ul>
-			</nav>
+
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#hambuger" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapes" id="hambuger">
+					<ul class="navbar-nav ms-auto" >
+						<li class="nav-item"><a class="nav-link" href="#headtop">Home</a></li>
+						<li class="nav-item"><a class="nav-link" href="#">Menu</a></li>
+						<li class="nav-item"><a class="nav-link" href="#amenities">Amenities</a></li>
+						<li class="nav-item"><a class="nav-link" href="#about-us">About us</a></li>
+						<li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+						<li class="nav-item"><a class="nav-link" href="#contact_sec">Contact</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
 			<div class="row g-4">
 				<div class="col-lg-6">
 					<h1>Eat well and Live well!</h1>
-					<button class="btn btn-dark">Menu</button>
-					<button class="btn btn-dark btn-outline-light">Order Online</button>
-					<button class="btn btn-dark">Book a table</button>
+					<a href="#menu_sec"><button class="btn btn-dark">Menu</button></a>
+					<a href="#order"><button class="btn btn-dark btn-outline-light">Order Online</button></a>
+					<a href="#book"><button class="btn btn-dark">Book a table</button></a> 
 				</div>
 				
 				<div class="col-lg-6">
 					<img class="headtopimage" src="Images/greeting-image.png" >
 				</div>
 			</div>
-		</div>
 		</section>
 
 	<!-- Menu Section -->
@@ -59,7 +68,7 @@
 					<div class="card">
 						<img class="card-img-top" src="Images/swallow-menu.jpg">
 						<div class="card-body">
-						<h4 class="h4">Swallow/Local Dishes</h4>
+						<h4>Swallow/Local Dishes</h4>
 						<p  class="menu_p">We are known to serve delicious local dishes/menus that would have you licking your fingers</p>
 						</div>
 					</div>
@@ -69,7 +78,7 @@
 					<div class="card">
 						<img class="card-img-top" src="Images/international-dish-menu.jpg">
 						<div class="card-body">
-							<h4 class="h4">International Dishes</h4>
+							<h4>International Dishes</h4>
 							<p  class="menu_p">Our foreign menus would leave you silivating and wanting more!</p>
 						</div>
 					</div>
@@ -79,7 +88,7 @@
 					<div class="card">
 						<img class="card-img-top" src="Images/breakfast-menu.jpg">
 						<div class="card-body">
-							<h4 class="h4">Breakfast</h4>
+							<h4>Breakfast</h4>
 							<p class="menu_p">Something light to start your day!</p>
 						</div>
 					</div>
@@ -89,7 +98,7 @@
 					<div class="card">
 						<img class="card-img-top" src="Images/small-chops-menu.jpg">
 						<div class="card-body">
-							<h4 class="h4">Small-Chops</h4>
+							<h4>Small-Chops</h4>
 							<p class="menu_p">Something nice to stirr your appetite for the main course!</p>
 						</div>
 					</div>
@@ -99,8 +108,8 @@
 					<div class="card">
 						<img class="card-img-top" src="Images/desert-menu.png">
 						<div class="card-body"> 
-							<h4 class="h4">Desert</h4>
-							<p class="menu_p">After that main course, something suppose follow na. Dont't you think?</p>
+							<h4>Desert</h4>
+							<p class="menu_p">After that main course, something suppose follow na. Don't you think?</p>
 						</div>
 					</div>
 				</div>
@@ -109,7 +118,7 @@
 					<div class="card">
 						<img class="card-img-top" src="Images/drinks-menu.jpg">
 						<div class="card-body">
-							<h4 class="h4">Drinks</h4>
+							<h4>Drinks</h4>
 							<p  class="menu_p">Every good meal, deserves a Good drink "Picolo 2022"</p>
 						</div>
 					</div>
@@ -129,22 +138,22 @@
 
 			<div class="col-lg-3 amn-div">
 				<i class="fa-solid fa-truck fa-4x"></i>
-				<h4 clas>Home Delivery</h4>
+				<h4 class="amn_h4">Home Delivery</h4>
 			</div>
 
 			<div class="col-lg-3 amn-div">
 				<i class="fa-solid fa-box fa-4x"></i>
-				<h4>Take Away</h4>
+				<h4 class="amn_h4">Take Away</h4>
 			</div>
 
 			<div class="col-lg-3 amn-div">
 				<i class="fa-solid fa-credit-card fa-4x"></i>
-				<h4>Multiple Payment Methods</h4>
+				<h4 class="amn_h4">Multiple Payment Methods</h4>
 			</div>
 
 			<div class="col-lg-3 amn-div">
 				<i class="fa-solid fa-champagne-glasses fa-4x"></i>
-				<h4>Party/Event Orders</h4>
+				<h4 class="amn_h4">Party/Event Orders</h4>
 			</div>
 
 		</div>
@@ -156,62 +165,148 @@
 
 	<section id="about-us">
 
-						
 		<div class="row">
 
-			<div class="col-lg-6 fonts">
+			<div class="col-lg-6">
 				<h3>About us</h3>
-				<p class="p_aboutus">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<p> Good nutritution and diet is a very good means of sustaining one's life. GOOD NEWS!.....EAT WEll is ever available to provide you good delicacies at the perfect time😜 to make life easier, home delivery is highly welcome. With us there is no regret and dissapointment...promise to treat you on VIP diet.</p>
 			</div>
-
-
 			<div class="col-lg-6">
 				<img class="abt_img" src="Images/about-us-image.webp">
 			</div>
 
 		</div>
-		
-
 	
-
 	</section>
 
 	<!-- Gallery Section -->
 
-	<section>
+	<section id="gallery">
+		<div id="gallerycarousel" class="carousel slide" data-bs-ride="carousel">
 
-		<div>
-			<img src="Images/gallery-image-11.jpg" width="400px" height="400px">
-			<img src="Images/gallery-image-10.jpg" width="400px" height="400px">
-			<img src="Images/gallery-image-12.jpg" width="400px" height="400px">
-			<img src="Images/gallery-image-2.png" width="400px" height="400px">
-			<img src="Images/gallery-image-3.jpg" width="400px" height="400px">
-			<img src="Images/gallery-image-4.jpg" width="400px" height="400px">
-			<img src="Images/gallery-image-8.jpg" width="400px" height="400px">
-			<img src="Images/gallery-image-7.jpg" height="400px" width="400px">
-			<img src="Images/gallery-image-6.jpg" width="400px" height="400px">
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<h2>Pie and Spices😊</h2>
+					<img class="rounded 4" src="Images/gallery-image-11.jpg" class="d-block" width="400px" height="400px">
+				</div>
+				<div class="carousel-item">
+					<h2>Poundo and vegetable</h2>
+					<img class="rounded 4" src="Images/gallery-image-10.jpg" class="d-block" width="400px" height="400px">
+				</div>
+				<div class="carousel-item">
+					<h2>small chops😜</h2>
+					<img class="rounded 4" src="Images/gallery-image-12.jpg" class="d-block" width="400px" height="400px">
+				</div>
+				<div class="carousel-item">
+					<h2>plantain sauce</h2>
+					<img class="rounded 4" src="Images/gallery-image-2.png" class="d-block" width="400px" height="400px">
+				</div>
+				<div class="carousel-item">
+					<h2>Vegetable soup😊</h2>
+					<img class="rounded 4" src="Images/gallery-image-3.jpg" class="d-block" width="400px" height="400px">
+				</div>
+				<div class="carousel-item">
+					<h2>Eba and Okro😘</h2>
+					<img class="rounded 4" src="Images/gallery-image-4.jpg" class="d-block" width="400px" height="400px">
+				</div>
+				<div class="carousel-item">
+					<h2>Yummy Soup</h2>
+					<img class="rounded 4" src="Images/gallery-image-8.jpg" class="d-block" width="400px" height="400px">
+				</div>
+				<div class="carousel-item">
+					<h2>Jollof Rice🤭</h2>
+					<img class="rounded 4" src="Images/gallery-image-7.jpg" class="d-block" height="400px" width="400px">
+				</div>
+				<div class="carousel-item">
+					<h2>Vegetable sauce😘</h2>
+					<img class="rounded 4" src="Images/gallery-image-6.jpg" class="d-block" width="400px" height="400px">
+				</div>
+			</div>
+			<div>
+				<button class="carousel-control-prev" type="button" data-bs-target="#gallerycarousel" data-bs-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Previous</span>
+				</button>
+				<button class="carousel-control-next" type="button" data-bs-target="#gallerycarousel" data-bs-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Next</span>
+				</button>
+			</div>
 		</div>
-
 	</section>
 
 	<!-- Contact Section -->
 
-	<section>
+	<section id="contact_sec">
+		<div class="row">
 
-		<div>
-			<h4>Leave your message, and we'll get back to you- Thanks!</h4>
+		<div class="col-lg-6 ">
+			<h4 class="contact_h4">Leave your message, and we'll get back to you- Thanks!</h4>
+			<p>+234 0123 456</p>
+			<a class="icon" href="#" class="d-block"><img src="Images/twitter.png" width="20px" height="20px">Twitter</a>
+			<a class="icon" href="#" class="d-block"><img src="Images/instagram.png" width="20px" height="20px">Instagram</a>
 		</div>
 
-		<div>
+		<div class="col-lg-6">
 			<form>
-				<input type="text" placeholder="Enter your Full Name" name="Name" required>
-				<input type="Email" placeholder="Enter your Email Address" name="Email" required>
-				<textarea cols="25" rows="15"></textarea>
-				<input type="submit" value="Send" name="Submit">
+				<input class="form-control" type="text" placeholder="Enter your Full Name" name="Name" required>
+				<input class="form-control" type="Email" placeholder="Enter your Email Address" name="Email" required>
+				<textarea class="form-control" cols="20" rows="5"></textarea>
+				<input class="form-control" type="submit" value="Send" name="Submit">
 			</form>
 		</div>
-
+		</div>
 	</section>
+
+
+	<!-- Book a Table -->
+	<section id="book">
+		<h3 class="bookh3">Book a Table</h3>
+		<div class="row">
+
+			<div id="tableinput" class="col-lg-6">
+				<form>
+					<input class="form-control" type="text" placeholder="Name" name="Name" required>
+					<input class="form-control" type="number" placeholder="Phone" name="Phone" required>
+					<input class="form-control" type="Date" name="Date">
+					<input class="form-control" type="Time" name="Time">
+				</form>
+			</div>
+			
+			<div id="tblinput" class="col-lg-6">
+				<select class="form-select form-select-lg">
+					<option selected ="1">Table for two</option>
+					<option value="2">Table for six</option>
+					<option value="3">Table for twelve</option>
+				</select>
+				<button id="tablebtn" class="btn btn-dark btn-outline-light">Order Online</button>
+			</div>
+		</div>
+	</section>
+
+	<!-- Order Online Section -->
+	<section id="order">
+		<h3>Order Online</h3>
+		<h4>You can order from us here</h4>
+
+		<div class="card" id="ordercard">
+			<form>
+				<input class="form-control" id="orderinput" type="text" placeholder="Email" name="Email" required>
+				<input class="form-control" id="orderinput" type="Date" placeholder="Date" name="Date">
+				<input class="form-control" id="orderinput" type="time" placeholder="Time" name="Time">
+				<textarea class="form-control"  id="orderinput">write your order here</textarea>
+				<input class="form-control" id="orderinput" type="text" placeholder="Location" name="Location">
+				<select class="form-select">
+					<option value="1">pick up</option>
+					<option value="2">Delivery</option>
+				</select>
+				<input class="form-control" id="orderinput"  type="submit" value="Send" name="Submit">
+			</form>
+		</div>
+	</section>
+
+
+	<script type="text/javascript" src="js/bootstrap.bundle.js"></script>
 
 </body>
 </html>

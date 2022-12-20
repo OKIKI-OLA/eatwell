@@ -16,9 +16,28 @@ h1{
 	padding-top: 20%;
 	line-height: 1;
 }
+h2{
+	font-family: 'Montserrat', sans-serif;
+	color: white;
+	padding-bottom: 5%;
+}
+h4{
+	font-family: 'ubuntu', sans-serif;
+	font-weight: thin;
+	text-align: center;
+}
+h3{
+	font-family: 'Sacramento', cursive;
+	font-weight: thin;
+	text-align: center;
+	font-size: 4rem;
+	
+
+}
 p{
 	font-family: 'ubuntu', sans-serif;
 	font-weight: thin;	
+	font-size: 1rem;
 }
 #eatwell{
 	font-family: 'Ubuntu', sans-serif;
@@ -35,37 +54,28 @@ p{
 	margin-right: 1%;
 }
 
-/*menu section*/
-h3{
-	font-family: 'Sacramento', cursive;
-	font-weight: thin;
-	text-align: center;
-	font-size: 4rem;
-	
 
-}
+/*menu section*/
+
 .card-img-top{
 	height: 250px;
 	align-content: center;
 	object-fit: over;
 }
 #menu_sec{
-	padding:10%;
+	padding:5%;
 }
 .card{
 	height: 400px;
 }
-h4{
-	font-family: 'ubuntu', sans-serif;
-	font-weight: thin;
-	text-align: center;
-}
+
 .menu_p{
 	font-family: 'ubuntu', sans-serif;
 	font-weight: thin;
 	text-align: center;
 
 }
+
 
 /*Amenities Section*/
 
@@ -83,18 +93,100 @@ h4{
 .amn-row{
 	padding-top: 5%;
 }
+.amn_h4{
+	font-family: 'ubuntu', cursive;
+	font-size: 1rem;
+}
 
 
 /*about us section*/
+#about-us{
+	padding: 5% 15%;
+}
 .abt_img{
 	width: 60%;
 	transform: rotate(7deg);
-	border-radius: 10%;
-	margin: 10% auto;
-	
-	
+	border-radius: 10%;	
 }
-.p_aboutus{
-	margin-left: 10%;
-	margin-right: 10%;
+
+
+/*GALLERY SECTION*/
+#gallerycarousel{
+	text-align: center;
+	background-color:#0F0E0E ;
+	padding: 5% 15%;
+}
+
+/*CONTACT SECTION*/
+
+
+#contact_sec{
+	padding: 5% 15%;
+	background-color: #EEEE;
+}
+.contact_h4{
+	text-align: left;
+	padding-top: 25%;
+	font-family:'Montserrat',sans-serif;
+	font-weight: 400;
+	line-height: 2;
+
+}
+.icon{
+	text-decoration: none;
+}
+
+
+/*order online*/
+#order{
+	margin: 3% 15%;
+	width: 70%;
+
+}
+
+#orderinput{
+	width: 70%;
+	height: 15%;
+	margin:3% 15%;
+}
+
+#ordercard{
+	height:50%;
+	background-color: #EEEE;
+}
+
+.form-select{
+	width: 70%;
+	margin: 3% 15%;
+}
+
+
+
+/*Book a Table*/
+
+#book{
+	padding: 3% 15%;
+	background-color: black;
+}
+#tableinput{
+	width: 30%;
+	margin:5%;
+}
+
+.bookh3{
+	color:#FFFF;
+	padding-bottom: 5%;
+}
+#select{
+	width:25%;
+	display:inline;
+}
+#tablebtn{
+	margin-left: 25%;
+	margin-top: 10%;
+}
+#tblinput{
+	width: 30%;
+	margin:5%;
+	padding-top:3%;
 }
