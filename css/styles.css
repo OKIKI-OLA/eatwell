@@ -1,0 +1,100 @@
+#headtop{
+	background-color: #0F0E0E;
+}
+
+input, textarea{
+	display: block;
+	padding: 15px;
+	margin: 10px;
+	width: 25%;
+}
+h1{
+	font-family: 'Montserrat', sans-serif;
+	color: #ffff;
+	font-weight:900;
+	font-size: 4rem;
+	padding-top: 20%;
+	line-height: 1;
+}
+p{
+	font-family: 'ubuntu', sans-serif;
+	font-weight: thin;	
+}
+#eatwell{
+	font-family: 'Ubuntu', sans-serif;
+	font-weight:thin;
+}
+.container-fluid{
+	padding: 2% 10%;
+}
+.headtopimage{
+	width: 80%;
+	transform: rotate(25deg);
+}
+.btn{
+	margin-right: 1%;
+}
+
+/*menu section*/
+h3{
+	font-family: 'Sacramento', cursive;
+	font-weight: thin;
+	text-align: center;
+	font-size: 4rem;
+	
+
+}
+.card-img-top{
+	height: 250px;
+	align-content: center;
+	object-fit: over;
+}
+#menu_sec{
+	padding:10%;
+}
+.card{
+	height: 400px;
+}
+h4{
+	font-family: 'ubuntu', sans-serif;
+	font-weight: thin;
+	text-align: center;
+}
+.menu_p{
+	font-family: 'ubuntu', sans-serif;
+	font-weight: thin;
+	text-align: center;
+
+}
+
+/*Amenities Section*/
+
+#amenities{
+	background-color: #EEEEEE;
+	padding: 5% 15%;
+	text-align: center;
+}
+
+.fa-solid{
+	color: #0F0E0E;
+	padding-bottom: 3%;
+}
+
+.amn-row{
+	padding-top: 5%;
+}
+
+
+/*about us section*/
+.abt_img{
+	width: 60%;
+	transform: rotate(7deg);
+	border-radius: 10%;
+	margin: 10% auto;
+	
+	
+}
+.p_aboutus{
+	margin-left: 10%;
+	margin-right: 10%;
+}
